@@ -2,9 +2,27 @@
   "rules": {
     "no-undef": "off",
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "import/no-unresolved": "off",
+    "import/order": ["error", {"newlines-between": "always"}]
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["components", "./src/components"],
+        ["hooks", "./src/hooks"]
+      ],
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module",

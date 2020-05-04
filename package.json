@@ -3,6 +3,16 @@
   "version": "0.0.1",
   "author": "Luan Bitar <7@lbitar.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "now",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,md,scss}\"",
+    "lint:fix": "eslint . --fix --ext .js,.jsx",
+    "format": "yarn prettier && yarn lint:fix"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "gatsby": "^2.19.45",
@@ -22,17 +32,10 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.20.2",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1"
-  },
-  "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "now",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "prettier": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint:fix": "eslint . --fix",
-    "format": "yarn prettier && yarn lint:fix"
   }
 }

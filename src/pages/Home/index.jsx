@@ -1,4 +1,5 @@
 import Layout from "components/Layout"
+
 import useHomeLogic from "./HomeLogic"
 
 const HomePage = () => {
