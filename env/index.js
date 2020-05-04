@@ -1,4 +1,4 @@
-module.exports = new Promise(async res => {
+module.exports = new Promise(res => {
   const envs = {
     CARDS: "/cards",
     ABOUT: "/about",
