@@ -1,2 +1,7 @@
 @import "./normalize";
 @import "./typography";
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

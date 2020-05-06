@@ -8,22 +8,24 @@
   background: white;
   top: 0;
   left: 0;
+  animation: allBackgroundLeftToRight .5s ease 2s forwards;
+  overflow: hidden;
   > .half-background {
     position: absolute;
     width: 50vw;
     height: 100vh;
     top: 0;
-    left: 50%;
+    left: 0;
     background: black;
+    animation: backgroundBlackLeftToRight 1s ease 1s forwards;
   }
 
   > .welcome-message {
     font-size: 90px;
     text-transform: lowercase;
-    margin: 0;
+    margin: 0 11px 0 0;
     mix-blend-mode: difference;
     filter: invert(1);
-    margin-right: 11px;
     letter-spacing: 14px;
 
     @include tablet {
@@ -32,5 +34,24 @@
     @include mobile {
       font-size: 40px;
     }
+  }
+}
+
+
+@keyframes allBackgroundLeftToRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes backgroundBlackLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150%);
   }
 }
