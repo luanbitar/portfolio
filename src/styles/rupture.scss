@@ -1,10 +1,12 @@
+@import "./variables";
+
 $base-font-size: 16px !default;
 $rasterise-media-queries: false !default;
 $rupture: (
   rasterise-media-queries: $rasterise-media-queries,
-  mobile-cutoff: 400px,
-  desktop-cutoff: 1050px,
-  hd-cutoff: 1800px,
+  mobile-cutoff: $mobile-cutoff,
+  desktop-cutoff: $desktop-cutoff,
+  hd-cutoff: $hd-cutoff,
   enable-em-breakpoints: false,
   base-font-size: $base-font-size,
   anti-overlap: false,

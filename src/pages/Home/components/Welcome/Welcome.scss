@@ -1,0 +1,36 @@
+.welcome-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  top: 0;
+  left: 0;
+  > .half-background {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    background: black;
+  }
+
+  > .welcome-message {
+    font-size: 90px;
+    text-transform: lowercase;
+    margin: 0;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    margin-right: 11px;
+    letter-spacing: 14px;
+
+    @include tablet {
+      font-size: 60px;
+    }
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+}

@@ -4,7 +4,12 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "import/no-unresolved": "off",
-    "import/order": ["error", {"newlines-between": "always"}]
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always"
+      }
+    ]
   },
   "extends": [
     "eslint:recommended",
@@ -15,11 +20,20 @@
   "settings": {
     "import/resolver": {
       "alias": [
-        ["components", "./src/components"],
-        ["hooks", "./src/hooks"]
+        [
+          "components",
+          "./src/components"
+        ],
+        [
+          "hooks",
+          "./src/hooks"
+        ]
       ],
       "node": {
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     }
   },
