@@ -8,7 +8,7 @@
   background: white;
   top: 0;
   left: 0;
-  animation: allBackgroundLeftToRight .5s ease 2s forwards;
+  animation: allBackgroundLeftToRight 0.5s ease 2s forwards;
   overflow: hidden;
   > .half-background {
     position: absolute;
@@ -36,7 +36,6 @@
     }
   }
 }
-
 
 @keyframes allBackgroundLeftToRight {
   0% {
