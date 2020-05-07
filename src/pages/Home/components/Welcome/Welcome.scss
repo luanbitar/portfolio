@@ -10,6 +10,7 @@
   left: 0;
   animation: allBackgroundLeftToRight 0.5s ease 2s forwards;
   overflow: hidden;
+  z-index: 2;
   > .half-background {
     position: absolute;
     width: 50vw;
