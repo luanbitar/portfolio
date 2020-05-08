@@ -1,4 +1,8 @@
-.cache
+.cache/
 package.json
 package-lock.json
-public
+public/
+static/
+node_modules/
+.now/
+.idea/

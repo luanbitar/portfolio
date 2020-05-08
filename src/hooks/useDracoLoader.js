@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
-import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
-import {DRACOLoader} from "three/examples/jsm/loaders/DRACOLoader";
+import { useEffect, useMemo, useState } from "react"
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader"
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
 function useDracoLoader(gltf) {
   const [model, setModel] = useState(null)
@@ -12,10 +12,7 @@ function useDracoLoader(gltf) {
     loader.load(`/3D/${gltf}/scene.gltf`, setModel)
   }, [])
 
-  return [
-    model,
-    setModel
-  ]
+  return [useMemo(() => model, [model]), setModel]
 }
 
 export default useDracoLoader

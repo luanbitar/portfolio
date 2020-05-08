@@ -1,4 +1,5 @@
 {
+  "ignorePatterns": ["node_modules/", "public/", ".now/", ".cache/", ".idea/", "static/"],
   "rules": {
     "no-undef": "off",
     "react/react-in-jsx-scope": "off",
@@ -7,7 +8,30 @@
     "import/order": [
       "error",
       {
-        "newlines-between": "always"
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "groups": ["builtin", "external", "internal", "index", "sibling", "parent"],
+        "pathGroups": [
+          {
+            "pattern": "components/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "hooks/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "pages/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "styles/**",
+            "group": "internal"
+          }
+        ]
       }
     ]
   },

@@ -1,10 +1,10 @@
-import * as THREE from "three"
+import "./ThreeScene.scss"
 import React, { useRef, Suspense } from "react"
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
+import * as THREE from "three"
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
-import "./ThreeScene.scss"
-import useDracoLoader from "hooks/useDracoLoader";
+import useDracoLoader from "hooks/useDracoLoader"
 
 extend({ OrbitControls })
 
