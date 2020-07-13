@@ -27,8 +27,18 @@ function Layout({ children }) {
           {`{
             "@context": "https://schema.org",
             "@type": "Organization",
+            "name: "Luan Bitar",
             "url": "https://lbitar.com",
-            "logo": "https://lbitar.com/images/l.png"
+            "logo": "https://lbitar.com/images/l.png",
+            "sameAs" : [
+              "https://twitter.com/lbitar7",
+              "https://www.facebook.com/luanbitar",
+              "https://github.com/luanbitar",
+              "https://www.instagram.com/luanbitar",
+              "https://www.linkedin.com/in/luanbitar/",
+              "https://www.youtube.com/LuanBitar",
+              "https://www.twitch.tv/5empty"
+              ]
           }`}
         </script>
       </Helmet>
