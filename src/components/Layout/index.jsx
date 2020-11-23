@@ -27,7 +27,7 @@ function Layout({ children }) {
           {`{
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name: "Luan Bitar",
+            "name": "Luan Bitar",
             "url": "https://lbitar.com",
             "logo": "https://lbitar.com/images/l.png",
             "sameAs" : [
